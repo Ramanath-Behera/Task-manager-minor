@@ -1,76 +1,216 @@
-# Password Generator
+# Task Manager
 
-A simple and responsive Password Generator web application built using HTML, CSS, and JavaScript. The application generates strong and secure passwords based on user-selected options such as password length and character types.
+A full-stack Task Manager web application developed using the MERN Stack. The application allows users to register, log in securely, and manage their daily tasks efficiently through a simple and responsive interface.
+
+---
+
+## Project Overview
+
+Task Manager is a productivity application where users can create, update, complete, search, filter, and delete tasks. Authentication is implemented using JSON Web Tokens (JWT), and all user data is securely stored in MongoDB.
 
 ---
 
 ## Features
 
-- Generate secure random passwords
-- Adjustable password length
-- Include uppercase letters
-- Include lowercase letters
-- Include numbers
-- Include special characters
-- Copy generated password to clipboard
-- Responsive and clean user interface
+### User Authentication
+- User Registration
+- User Login
+- JWT Authentication
+- Secure Password Hashing using bcrypt
+- Protected Routes
+
+### Task Management
+- Create Tasks
+- Edit Tasks
+- Delete Tasks
+- Mark Tasks as Completed
+- Search Tasks
+- Filter Tasks
+- Sort Tasks
+- Delete Completed Tasks
+
+### Dashboard
+- Total Tasks
+- Completed Tasks
+- Pending Tasks
+- Overdue Tasks
+
+### User Interface
+- Responsive Design
+- Clean Dashboard Layout
+- Toast Notifications
+- Simple Navigation
 
 ---
 
 ## Technologies Used
 
-- HTML5
+### Frontend
+- React.js
+- Vite
+- Axios
 - CSS3
-- JavaScript (ES6)
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+
+### Deployment
+- Frontend: Vercel
+- Backend: Render
+- Database: MongoDB Atlas
 
 ---
 
 ## Project Structure
 
 ```
-Password Generator/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
+task-manager/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
 ```
 
 ---
 
-## How to Run the Project
+## Installation
 
-1. Download or clone this repository.
-2. Open the project folder.
-3. Double-click `index.html` or open it in any modern web browser.
+### Clone Repository
 
-No additional software or installation is required.
+```bash
+git clone https://github.com/Ramanath-Behera/Task-manager-minor.git
+```
+
+### Install Backend
+
+```bash
+cd backend
+npm install
+```
+
+### Install Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+Example:
+
+```env
+MONGO_URI=Your_MongoDB_URI
+JWT_SECRET=Your_JWT_Secret
+PORT=5000
+```
+
+---
+
+## Run the Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+---
+
+## Run the Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Deployment
+
+### Frontend
+
+Deployed using **Vercel**
+
+### Backend
+
+Deployed using **Render**
+
+### Database
+
+Hosted on **MongoDB Atlas**
 
 ---
 
 ## Screenshots
 
-Add screenshots of the application here if required.
+You can add screenshots here.
 
 Example:
 
 ```
 screenshots/
-│── home.png
+│── login.png
+│── dashboard.png
+│── add-task.png
 ```
 
 ---
 
 ## Future Improvements
 
-- Password strength indicator
-- Dark mode
-- Password history
-- Option to exclude similar characters
-- Custom character set
+- Task Categories
+- Task Priority Colors
+- Due Date Reminders
+- Drag and Drop Tasks
+- Dark Mode
+- User Profile Management
 
 ---
 
-## Author
+## Learning Outcomes
+
+Through this project, I learned:
+
+- MERN Stack Development
+- REST API Development
+- JWT Authentication
+- MongoDB Integration
+- CRUD Operations
+- Git & GitHub
+- Deployment using Render and Vercel
+
+---
+
+## License
+
+This project was developed for learning and internship purposes.
 
 **Ramanath Behera**
 
